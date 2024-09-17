@@ -1,0 +1,193 @@
+/* Body styling*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+
+}
+
+/* Header*/
+h1 {
+    text-align: center;
+    color: #003366
+}
+
+.welcome-message {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message h2 {
+    color: #003366;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.welcome-message p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.welcome-message strong {
+    color: #003366;
+}
+
+/* Username and Quiz sections*/
+.username-section, .quiz-section {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Username input field*/
+
+.username-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+/*Orginal Button*/
+
+button {
+    background-color: #003366;
+    color: #ffffff;
+    border: none;  
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+
+}
+
+.quit-btn {
+    margin-top: 15px;
+}
+
+.next-btn {
+    margin-bottom: 15px;
+}
+
+/* Answer button styling*/
+.answer-buttons button { 
+    background-color: #e1e1e1;
+    color: #003366;
+    font-weight: bold;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Hover for answer buttons*/
+.answer-buttons button:hover {
+    background-color: #003366;
+    color: #fff;
+
+}
+
+/* Feedback text*/ 
+.feedback-text {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+
+
+/* Media Query for smaller screens*/
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .welcome-message {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .welcome-message h2 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-message p {
+        font-size: 1rem;
+    }
+    
+}
+
+.username-section, .quiz-section {
+    padding: 10px;
+
+}
+
+/* Media Query for larger devicec*/
+
+@media (min-width: 1200px) {
+
+    body {
+        padding: 40px;
+    }
+    
+
+
+  h1 {
+    font-size: 2.5rem;
+
+  }
+
+ .username-section, .quiz-section {
+    max-width: 800px;
+    padding: 30px;
+ } 
+
+ button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+ }
+
+ .answer-buttons button {
+    font-size: 1.1rem;
+    padding: 15px;
+ }
+
+.feedback-text {
+    font-size: 1.3rem;
+}
+
+.welcome-message {
+    max-width: 1000px;
+    padding: 30px;
+}
+
+.welcome-message h2 {
+    font-size: 2.5rem;
+}
+
+.welcome-message p {
+    font-size: 1.2rem;
+}
+
+} 
