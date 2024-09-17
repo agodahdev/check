@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive football quiz to test your football knowledge.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Ultimate Football Quiz</title>
+</head>
+<body>
+    <!-- Main content of the page-->
+    <header>
+        <h1>Ultimate Football Quiz</h1>
+    </header>
+    
+     <main>
+
+        <!-- Welcome message section-->
+       <section class="welcome-message">
+        <h2>Welcome to the Ultimate Football Quiz Challenge!</h2>
+        <p>Are you a true football fan? Do you think you know everything there is to know about the beautiful game? Whether you're Premier League expert, La Liga fan or a World Cup fanatic,
+            this quiz will put your football knowledge to the test!
+        </p>
+        <p>Take the challenge and see how many questions you can get right!</p>
+        <p><Strong>Enter your name below and get started!</Strong></p>
+       </section>
+
+        <!-- section for username input-->
+         <section class="username-section">
+            <h2>Start the Football Quiz</h2>
+            <label for="username" aria-label="Enter your username to start the quiz">Enter your username:</label>
+            <!-- input field the username for the  user to type username-->
+            <input class="username-input" type="text" id="username" placeholder="Your username" aria-required="true">
+            <button class="start-btn">Start Quiz</button>
+         </section>
+
+         <!-- section for the quiz questions, hidden until the quiz starts-->
+         <section class="quiz-section" style="display: none">
+            <div class="answer-buttons" role="group" aria-labelledby="question"></div>
+              
+            <!--showing feedback (correctly/incorrectly)-->
+            <p class="feedback-text"></p>
+            
+            <!-- to display the user's score-->
+            <div class="score-section">
+                <p>Score: <span class="score">0</span></p>
+            </div>
+            <!-- Button to go to the next question-->
+            <button class="next-btn" style="display: none;">Next Question</button>
+            <!-- Button to restart the quiz, displays only at the end of the quiz-->
+            <button class="restart-btn" style="display: none;">Restart Quiz</button>
+            <!-- quit button-->
+            <button class="quit-btn" style="display: none">Quit Quiz</button>
+
+         </section>
+
+     </main>
+
+     <footer>
+        <p>Ultimate Football Quiz</p>
+     </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
